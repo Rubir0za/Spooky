@@ -13,6 +13,10 @@ Características principales
 - Integración: posibilidad de invocar `Responder.py` externo si el usuario lo tiene instalado.
 - Modo CLI para ejecución no interactiva y `--dry-run` para validar parámetros.
 
+
+<img width="1920" height="1080" alt="Screenshot_2025-09-30_11_08_30" src="https://github.com/user-attachments/assets/e310aed8-5b76-4a5b-b197-ad05fcd0c988" />
+
+
 ````markdown
 # Spooky — MITM & Sniffing (modo terminal)
 
