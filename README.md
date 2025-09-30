@@ -232,6 +232,6 @@ sudo python3 spooky.py --iface eth0 --target 10.0.2.5 --gateway 10.0.2.1 --requi
 - Pull requests y forks bienvenidos. Añade tests si cambias la lógica de red o parsing. Mantén el enfoque educativo/defensivo.
 
 ---
-Generado para uso en laboratorios.  Happy hacking!
+Generado para uso en laboratorios y uso educativo. Happy hacking!
 
 ````
