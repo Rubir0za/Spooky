@@ -3,7 +3,7 @@
 
 **Fecha:** October 8, 2025  
 **Versión:** 2.0 Enhanced  
-**Desarrollador:** Rubir0za  
+**Desarrolladores:** Vixy & Rubir0za  
 
 ---
 
@@ -391,6 +391,13 @@ class CustomPlugin(SpookyPlugin):
 
 ## 🚀 **INSTALACIÓN DE DEPENDENCIAS NUEVAS**
 
+### Instalación Automática (Recomendada):
+```bash
+# El script maneja automáticamente externally-managed-environment
+sudo ./install.sh
+```
+
+### Instalación Manual:
 ```bash
 # Dependencias básicas (obligatorias)
 sudo apt update
@@ -402,6 +409,32 @@ pip3 install flask psutil requests
 
 # Para análisis ML (futuro)
 pip3 install scikit-learn numpy pandas
+```
+
+### 🔧 **Solución para externally-managed-environment**
+
+Este error es común en Ubuntu 23.04+, Debian 12+, etc. Soluciones:
+
+**Método 1 - Script Automático:**
+```bash
+sudo ./install.sh  # Maneja automáticamente el problema
+```
+
+**Método 2 - Force Install:**
+```bash
+pip3 install --break-system-packages scapy flask psutil requests
+```
+
+**Método 3 - Entorno Virtual:**
+```bash
+python3 -m venv spooky-env
+source spooky-env/bin/activate
+pip install scapy flask psutil requests
+```
+
+**Método 4 - Paquetes del Sistema:**
+```bash
+sudo apt install python3-scapy python3-flask python3-psutil python3-requests
 ```
 
 ---
@@ -433,4 +466,4 @@ Tu herramienta Spooky ahora es una **plataforma completa de análisis de red y M
 
 ---
 
-*Documentación de desarrollo - Spooky v2.0 Enhanced Edition by Rubir0za*
+*Documentación de desarrollo - Spooky v2.0 Enhanced Edition by Vixy & Rubir0za*

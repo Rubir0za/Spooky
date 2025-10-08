@@ -3,12 +3,67 @@
 ## Instalación Rápida
 ```bash
 # Clonar y preparar
+<<<<<<< HEAD
 git clone <repo> spooky
+=======
+git clone https://github.com/Vixy-beep/Spooky.git spooky
+>>>>>>> c4ece41 (📝 Update attribution: Include Vixy as co-developer)
 cd spooky
 sudo ./install.sh
 
 # Verificar instalación
 sudo python3 spooky.py --help
+```
+
+## 🔧 Solución para externally-managed-environment
+
+Si obtienes el error `externally-managed-environment`, tienes varias opciones:
+
+### Opción 1: Automática (Recomendada)
+```bash
+# El script install.sh maneja esto automáticamente
+sudo ./install.sh
+# Si crea un entorno virtual, usa:
+sudo spooky spooky.py --help
+```
+
+### Opción 2: Manual con --break-system-packages
+```bash
+# Instalar dependencias forzando el sistema
+sudo pip3 install --break-system-packages scapy flask psutil requests
+
+# Usar normalmente
+sudo python3 spooky.py --help
+```
+
+### Opción 3: Entorno Virtual Manual
+```bash
+# Crear entorno virtual
+python3 -m venv spooky-env
+source spooky-env/bin/activate
+
+# Instalar dependencias
+pip install scapy flask psutil requests
+
+# Usar con el entorno activado
+sudo python3 spooky.py --help
+```
+
+### Opción 4: Paquetes del Sistema
+```bash
+# Usar paquetes de la distribución
+sudo apt update
+sudo apt install python3-scapy python3-flask python3-psutil python3-requests
+
+# Usar normalmente
+sudo python3 spooky.py --help
+```
+
+### Opción 5: Eliminar Protección (No recomendada)
+```bash
+# CUIDADO: Esto elimina la protección del sistema
+sudo rm /usr/lib/python*/EXTERNALLY-MANAGED
+pip3 install scapy flask psutil requests
 ```
 
 ## 🎯 Ejemplos por Escenario
@@ -352,4 +407,4 @@ Spooky v2.0 es ahora una herramienta profesional con capacidades que rivalizan c
 
 ---
 
-*Guía de uso desarrollada por Rubir0za - Spooky v2.0*
+*Guía de uso desarrollada por Vixy & Rubir0za - Spooky v2.0*
