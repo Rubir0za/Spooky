@@ -3,7 +3,7 @@
 
 **Fecha:** October 8, 2025  
 **Versión:** 2.0 Enhanced  
-**Desarrollador:** Rubir0za  
+**Desarrollador:** Rubir0za & Vixy
 
 ---
 
