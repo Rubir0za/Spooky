@@ -433,4 +433,4 @@ Tu herramienta Spooky ahora es una **plataforma completa de análisis de red y M
 
 ---
 
-*Documentación de desarrollo - Spooky v2.0 Enhanced Edition by Rubir0za*
+*Documentación de desarrollo - Spooky v2.0 Enhanced Edition by Rubir0za & Vixy*
