@@ -3,7 +3,7 @@
 ## Instalación Rápida
 ```bash
 # Clonar y preparar
-git clone <tu-repo> spooky
+git clone <repo> spooky
 cd spooky
 sudo ./install.sh
 
